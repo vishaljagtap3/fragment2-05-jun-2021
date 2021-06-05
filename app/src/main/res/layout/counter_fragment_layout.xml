@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edtCount"
+    <TextView
+        android:id="@+id/txtCount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter new count" />
-    <Button
-        android:id="@+id/btnResetCounter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Reset" />
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btnAddCounter"
+            android:id="@+id/btnMinus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add Counter" />
+            android:text="-" />
 
         <Button
-            android:id="@+id/btnRemoveCounter"
+            android:id="@+id/btnPlus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Remove Counter" />
-
+            android:text="+" />
     </LinearLayout>
 
 </LinearLayout>
